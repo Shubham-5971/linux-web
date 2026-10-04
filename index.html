@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shubham Sherkar | My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #ffffff;
+        }
+
+        /* Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111827;
+            border-bottom: 1px solid #263449;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #d1d5db;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 110px 20px;
+            background: linear-gradient(135deg, #0b1120, #172554);
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #9ca3af;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            background: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0284c7;
+            transform: translateY(-3px);
+        }
+
+        /* Features */
+        .features {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .card {
+            flex: 1;
+            padding: 35px 25px;
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #9ca3af;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: #9ca3af;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            border-top: 1px solid #263449;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">SHUBHAM</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <h1>
+            Hey Everyone, I am <span>Shubham Sherkar</span>
+        </h1>
+
+        <p>
+            Welcome to my website! 
+            I am passionate about Web Development, Cloud Computing and DevOps.
+        </p>
+
+        <a href="#services" class="btn">
+            Explore More
+        </a>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="features" id="services">
+
+        <h2>What I Do</h2>
+
+        <div class="cards">
+
+            <div class="card" id="about">
+                <h3>Web Development</h3>
+
+                <p>
+                    I create modern, responsive and user-friendly
+                    websites using HTML, CSS and JavaScript.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud Computing</h3>
+
+                <p>
+                    I am learning and working with AWS cloud
+                    infrastructure and cloud technologies.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>DevOps</h3>
+
+                <p>
+                    I am learning DevOps tools and technologies
+                    including Linux, Docker, Jenkins and Kubernetes.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <p>
+            &copy; 2026 Shubham Sherkar. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
